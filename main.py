@@ -12,6 +12,9 @@ while True:
         my_oled.print_text("something else",0,64)
     if state == 2:
         my_oled.oled.line(0,0,10,10,1)
+    if state == 3:
+        my_oled.graphics.fill_rect(0,0,10,10,1)
+
     time.sleep(1)
     state= state +1
     if state == 4:
